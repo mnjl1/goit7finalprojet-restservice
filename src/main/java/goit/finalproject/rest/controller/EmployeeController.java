@@ -11,7 +11,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import java.util.List;
 
 @RestController
-@EnableWebMvc
 @RequestMapping("/employee")
 public class EmployeeController {
     @Autowired
