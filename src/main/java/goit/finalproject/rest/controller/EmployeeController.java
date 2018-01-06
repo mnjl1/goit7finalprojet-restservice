@@ -2,27 +2,31 @@ package goit.finalproject.rest.controller;
 
 import goit.finalproject.rest.Service.EmployeeService;
 import goit.finalproject.rest.model.Employee;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/employee")
+@Api(value = "Employee", description = "Operations with employee")
 public class EmployeeController {
     @Autowired
     EmployeeService employeeService;
 
-    @RequestMapping(value = "/add",method = RequestMethod.POST)
+    @ApiOperation(value = "Add new employee")
+    @RequestMapping(value = "/add",method = RequestMethod.POST, produces = "application/json")
     public ResponseEntity<Employee> addEmployee(@RequestBody Employee employee){
         employeeService.save(employee);
         return new ResponseEntity<Employee>(employee, HttpStatus.CREATED);
     }
 
-    @RequestMapping(method = RequestMethod.PUT)
+    @ApiOperation(value = "Update employee")
+    @RequestMapping(method = RequestMethod.PUT, produces = "application/json")
     public ResponseEntity<Void> updateEmployee(@RequestBody Employee employee){
         Employee existingEmployee = employeeService.getById(employee.getId());
         if (existingEmployee == null){
@@ -34,6 +38,7 @@ public class EmployeeController {
         }
     }
 
+    @ApiOperation(value = "Find employee by ID", response = Employee.class)
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ResponseEntity<Employee> getEmployee(@PathVariable("id") long id){
         Employee employee = employeeService.getById(id);
@@ -43,7 +48,8 @@ public class EmployeeController {
         return new ResponseEntity<Employee>(employee, HttpStatus.OK);
     }
 
-    @RequestMapping(method = RequestMethod.GET)
+    @ApiOperation(value = "List of all employees", response = Iterable.class)
+    @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<List<Employee>> getAllEmployees(){
         List<Employee> employees = employeeService.getAll();
         if (employees.isEmpty()){
@@ -52,7 +58,9 @@ public class EmployeeController {
         return new ResponseEntity<List<Employee>>(employees, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+
+    @ApiOperation(value = "Delete employee")
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE, produces = "application/json")
     public ResponseEntity<Void> deleteEmployee(@PathVariable("id") long id){
         Employee employee = employeeService.getById(id);
         if (employee == null){
