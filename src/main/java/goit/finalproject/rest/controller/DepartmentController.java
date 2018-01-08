@@ -2,21 +2,16 @@ package goit.finalproject.rest.controller;
 
 import goit.finalproject.rest.Service.DepartmentService;
 import goit.finalproject.rest.model.Department;
-import goit.finalproject.rest.model.Employee;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/department")
 @Api(value = "department", description = "Operations with Department")
 public class DepartmentController {
@@ -39,7 +34,7 @@ public class DepartmentController {
         }
         else {
             departmentService.save(department);
-            return new ResponseEntity<Void>(HttpStatus.OK);
+            return new ResponseEntity<>(HttpStatus.OK);
         }
     }
 
@@ -48,9 +43,9 @@ public class DepartmentController {
     public ResponseEntity<Department> getDepartment(@PathVariable("id") long id){
         Department department = departmentService.getById(id);
         if (department == null){
-            return new ResponseEntity<Department>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<Department>(department, HttpStatus.OK);
+        return new ResponseEntity<>(department, HttpStatus.OK);
     }
 
     @ApiOperation(value = "List of all Departments")
@@ -58,9 +53,9 @@ public class DepartmentController {
     public ResponseEntity<List<Department>> getAllDepartments(){
         List<Department> departments = departmentService.getAll();
         if (departments.isEmpty()){
-            return new ResponseEntity<List<Department>>(HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<List<Department>>(departments, HttpStatus.OK);
+        return new ResponseEntity<>(departments, HttpStatus.OK);
     }
 
 
@@ -69,11 +64,11 @@ public class DepartmentController {
     public ResponseEntity<Void> deleteDepartment(@PathVariable("id") long id){
         Department department = departmentService.getById(id);
         if (department == null){
-            return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         else {
             departmentService.delete(id);
-            return new ResponseEntity<Void>(HttpStatus.GONE);
+            return new ResponseEntity<>(HttpStatus.GONE);
         }
     }
 }

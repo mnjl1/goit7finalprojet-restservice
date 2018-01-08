@@ -1,7 +1,10 @@
 package goit.finalproject.rest.model;
 
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
-import java.util.Set;
+import java.time.LocalTime;
 
 @Entity
 @Table(name = "event")
@@ -11,20 +14,19 @@ public class Event {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @Column(name = "eventName")
-    private String eventName;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+    private LocalTime date;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "event")
-    private Set<Employee> employees;
+    @ManyToOne(fetch = FetchType.EAGER)
+    private Employee employee;
 
-    public Event(){
+    @Enumerated
+    private Status status;
 
-    }
-
-    public Event(int id, String event, Set<Employee> employees) {
-        this.id = id;
-        this.eventName = event;
-        this.employees = employees;
+    public Event(LocalTime date, Employee employee, Status status) {
+        this.date = date;
+        this.employee = employee;
+        this.status = status;
     }
 
     public int getId() {
@@ -35,32 +37,29 @@ public class Event {
         this.id = id;
     }
 
-    public String getEvent() {
-        return eventName;
+    public LocalTime getDate() {
+        return date;
     }
 
-    public void setEventName(String event) {
-        this.eventName = event;
+    public void setDate(LocalTime date) {
+        this.date = date;
     }
 
-    public Set<Employee> getEmployees() {
-        return employees;
+    public Employee getEmployee() {
+        return employee;
     }
 
-    public void setEmployees(Set<Employee> employees) {
-        this.employees = employees;
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 
-    public String getEventName() {
-        return eventName;
+    public Status getStatus() {
+        return status;
     }
 
-    @Override
-    public String toString() {
-        return "Event{" +
-                "id=" + id +
-                ", event='" + eventName + '\'' +
-                ", employees=" + employees +
-                '}';
+    public void setStatus(Status status) {
+        this.status = status;
     }
+
+
 }

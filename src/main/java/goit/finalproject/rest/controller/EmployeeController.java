@@ -16,13 +16,13 @@ import java.util.List;
 @Api(value = "Employee", description = "Operations with employee")
 public class EmployeeController {
     @Autowired
-    EmployeeService employeeService;
+    public EmployeeService employeeService;
 
     @ApiOperation(value = "Add new employee")
-    @RequestMapping(value = "/add",method = RequestMethod.POST, produces = "application/json")
+    @RequestMapping(method = RequestMethod.POST, produces = "application/json")
     public ResponseEntity<Employee> addEmployee(@RequestBody Employee employee){
         employeeService.save(employee);
-        return new ResponseEntity<Employee>(employee, HttpStatus.CREATED);
+        return new ResponseEntity<>(employee, HttpStatus.CREATED);
     }
 
     @ApiOperation(value = "Update employee")
@@ -30,11 +30,11 @@ public class EmployeeController {
     public ResponseEntity<Void> updateEmployee(@RequestBody Employee employee){
         Employee existingEmployee = employeeService.getById(employee.getId());
         if (existingEmployee == null){
-            return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         else {
             employeeService.save(employee);
-            return new ResponseEntity<Void>(HttpStatus.OK);
+            return new ResponseEntity<>(HttpStatus.OK);
         }
     }
 
@@ -43,9 +43,9 @@ public class EmployeeController {
     public ResponseEntity<Employee> getEmployee(@PathVariable("id") long id){
         Employee employee = employeeService.getById(id);
         if (employee == null){
-            return new ResponseEntity<Employee>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<Employee>(employee, HttpStatus.OK);
+        return new ResponseEntity<>(employee, HttpStatus.OK);
     }
 
     @ApiOperation(value = "List of all employees", response = Iterable.class)
@@ -53,9 +53,9 @@ public class EmployeeController {
     public ResponseEntity<List<Employee>> getAllEmployees(){
         List<Employee> employees = employeeService.getAll();
         if (employees.isEmpty()){
-            return new ResponseEntity<List<Employee>>(HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<List<Employee>>(employees, HttpStatus.OK);
+        return new ResponseEntity<>(employees, HttpStatus.OK);
     }
 
 
@@ -64,11 +64,11 @@ public class EmployeeController {
     public ResponseEntity<Void> deleteEmployee(@PathVariable("id") long id){
         Employee employee = employeeService.getById(id);
         if (employee == null){
-            return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         else {
             employeeService.delete(id);
-            return new ResponseEntity<Void>(HttpStatus.GONE);
+            return new ResponseEntity<>(HttpStatus.GONE);
         }
     }
 }

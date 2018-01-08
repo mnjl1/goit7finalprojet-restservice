@@ -8,14 +8,15 @@ import java.util.Set;
 public class Position {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "position_id")
+    @Column(name = "id")
     private long id;
 
-    @Column(name = "position_name")
+    @Column(name = "position")
     private String positionName;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "position")
     private Set<Employee> employees;
+
 
     public long getId() {
         return id;
@@ -41,12 +42,5 @@ public class Position {
         this.employees = employees;
     }
 
-    @Override
-    public String toString() {
-        return "Position{" +
-                "id=" + id +
-                ", positionName='" + positionName + '\'' +
-                ", employees=" + employees +
-                '}';
-    }
+
 }

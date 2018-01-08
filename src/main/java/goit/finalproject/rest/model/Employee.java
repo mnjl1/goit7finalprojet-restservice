@@ -1,18 +1,14 @@
 package goit.finalproject.rest.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "employee")
-public class Employee implements java.io.Serializable {
-
-    private static final long serialVersionUID = 4910225916550731446L;
-
-
+public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
     private long id;
 
     @Column(name = "first_name")
@@ -33,59 +29,26 @@ public class Employee implements java.io.Serializable {
     @Column(name = "salary")
     private long salary;
 
+    @OneToMany(mappedBy = "employee", fetch = FetchType.EAGER)
+    private List<Event> events;
+
     @ManyToOne(fetch = FetchType.EAGER)
     private Role role;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    private Event event;
-
-    @ManyToOne(fetch = FetchType.EAGER)
-    private Status status;
-
-
     public Employee(){
+
     }
 
-    public Employee(long id){
-        this.id=id;
-    }
-
-    public Employee(long id, String firstName, String lastName, String email, long salary) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.salary = salary;
-    }
-
-    public Employee(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
-    public Employee(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public Employee(long id, String firstName, String lastName, long salary) {
-        this.id=id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.salary=salary;
-    }
-
-    public Employee(String firstName, String lastName, String email,
-                    Department department, Position position, long salary, Role role,
-                    Event event, Status status) {
+    public Employee(String firstName, String lastName, String email, Department department,
+                    Position position, long salary, List<Event> events, Role role) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.department = department;
         this.position = position;
         this.salary = salary;
+        this.events = events;
         this.role = role;
-        this.event = event;
-        this.status = status;
     }
 
     public long getId() {
@@ -152,20 +115,12 @@ public class Employee implements java.io.Serializable {
         this.department = department;
     }
 
-    public Event getEvent() {
-        return event;
+    public List<Event> getEvents() {
+        return events;
     }
 
-    public void setEvent(Event event) {
-        this.event = event;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
+    public void setEvents(List<Event> events) {
+        this.events = events;
     }
 
     @Override
@@ -178,10 +133,8 @@ public class Employee implements java.io.Serializable {
                 ", department=" + department +
                 ", position=" + position +
                 ", salary=" + salary +
+                ", events=" + events +
                 ", role=" + role +
-                ", event=" + event +
-                ", status=" + status +
                 '}';
     }
-
 }

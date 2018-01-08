@@ -34,7 +34,7 @@ public class SwaggerConfig {
                 ,"Terms of service"
                 ,new Contact("Dmytro Manzhula, Inc", "www.goit.com"
                 , "d.manzhula@gmail.com"),
-                "manj&vart license",
+                "manj license",
                 "www.goit.com/license");
 
         return apiInfo;

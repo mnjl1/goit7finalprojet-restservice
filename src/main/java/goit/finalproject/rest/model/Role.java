@@ -8,7 +8,7 @@ import java.util.Set;
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private long id;
 
     @Column(name = "role")
     private String roleName;
@@ -22,7 +22,9 @@ public class Role {
         this.roleName = role;
     }
 
-    public int getId() {
+
+
+    public long getId() {
         return id;
     }
 
