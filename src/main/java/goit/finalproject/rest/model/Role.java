@@ -11,41 +11,33 @@ public class Role {
     private long id;
 
     @Column(name = "role")
-    private String roleName;
+    private String role;
 
     @OneToMany(mappedBy = "role", fetch = FetchType.EAGER)
     private Set<Employee> employees;
 
     public Role(){
     }
-    public Role(String role) {
-        this.roleName = role;
+
+    public Role(String role, Set<Employee> employees) {
+        this.role = role;
+        this.employees = employees;
     }
-
-
 
     public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
     public String getRole() {
-        return roleName;
+        return role;
     }
 
     public void setRole(String role) {
-        this.roleName = role;
-    }
-
-    public String getRoleName() {
-        return roleName;
-    }
-
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
+        this.role = role;
     }
 
     public Set<Employee> getEmployees() {
@@ -54,5 +46,15 @@ public class Role {
 
     public void setEmployees(Set<Employee> employees) {
         this.employees = employees;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Role{" +
+                "id=" + id +
+                ", role='" + role + '\'' +
+                ", employees=" + employees +
+                '}';
     }
 }
