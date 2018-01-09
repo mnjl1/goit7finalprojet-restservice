@@ -12,7 +12,7 @@ public class Position {
     private long id;
 
     @Column(name = "position")
-    private String positionName;
+    private String position;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "position")
     private Set<Employee> employees;
@@ -26,12 +26,12 @@ public class Position {
         this.id = id;
     }
 
-    public String getPositionName() {
-        return positionName;
+    public String getPosition() {
+        return position;
     }
 
-    public void setPositionName(String positionName) {
-        this.positionName = positionName;
+    public void setPosition(String position) {
+        this.position = position;
     }
 
     public Set<Employee> getEmployees() {
@@ -42,5 +42,12 @@ public class Position {
         this.employees = employees;
     }
 
-
+    @Override
+    public String toString() {
+        return "Position{" +
+                "id=" + id +
+                ", position='" + position + '\'' +
+                ", employees=" + employees +
+                '}';
+    }
 }
