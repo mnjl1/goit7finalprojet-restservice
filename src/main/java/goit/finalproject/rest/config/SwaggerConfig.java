@@ -32,7 +32,7 @@ public class SwaggerConfig {
                 ,"GoIt Restful service"
                 , "1.0"
                 ,"Terms of service"
-                ,new Contact("Dmytro Manzhula, Inc", "www.goit.com"
+                ,new Contact("Group 1_8 (Dmytro Manzhula & Loban Tetyana), Inc", "www.goit.com"
                 , "d.manzhula@gmail.com"),
                 "manj license",
                 "www.goit.com/license");

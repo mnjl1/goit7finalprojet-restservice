@@ -10,5 +10,25 @@
       <user-name>postgres</user-name>
       <introspection-schemas>time_control_db:public</introspection-schemas>
     </data-source>
+    <data-source name="mycompany@localhost" uuid="7bddb002-40af-40ed-b3af-12499a710cc7">
+      <database-info product="MySQL" version="5.7.19-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:mycompany</introspection-schemas>
+    </data-source>
+    <data-source name="finalDB@localhost" uuid="1262ddcd-bfe6-4e39-9034-370228ddeb65">
+      <database-info product="MySQL" version="5.7.19-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:finaldb</introspection-schemas>
+    </data-source>
   </component>
 </project>
