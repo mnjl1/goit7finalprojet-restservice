@@ -15,8 +15,8 @@ public class StatusWork implements Serializable {
     @Column(name="status")
     private String name;
 
-//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "statusWork")
-//    private List<DateStatus> dateStatuses;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "statusWork")
+    private List<DateStatus> dateStatuses;
 
     public StatusWork() {
     }

@@ -20,7 +20,7 @@ public class StatusWorkController {
     private StatusWorkService statusWorkService;
 
     @ApiOperation(value = "List of all status work")
-    @RequestMapping(method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(value = "/list",method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<List<StatusWork>> getAllStatusWork(){
         List<StatusWork> statusWorkList = statusWorkService.findAllStatusWork();
         if (statusWorkList.isEmpty()){
@@ -47,7 +47,7 @@ public class StatusWorkController {
     }
 
     @ApiOperation(value = "Update status")
-    @RequestMapping(method = RequestMethod.PUT, produces = "application/json")
+    @RequestMapping(value = "/update",method = RequestMethod.PUT, produces = "application/json")
     public ResponseEntity<Void> updateDepartment(@RequestBody StatusWork statusWork){
         StatusWork existingStatusWork = statusWorkService.findById(statusWork.getId());
         if (existingStatusWork == null){
@@ -60,7 +60,7 @@ public class StatusWorkController {
     }
 
     @ApiOperation(value = "Delete status")
-    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE, produces = "application/json")
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE, produces = "application/json")
     public ResponseEntity<Void> deleteStatus(@PathVariable("id") long id){
         StatusWork statusWork = statusWorkService.findById(id);
         if (statusWork == null){
