@@ -8,7 +8,6 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
@@ -32,6 +31,15 @@ public class SwaggerConfig extends WebSecurityConfigurerAdapter {
         httpSecurity.authorizeRequests().antMatchers(HttpMethod.GET)
             .hasRole("USER");
 
+        httpSecurity.authorizeRequests().antMatchers(HttpMethod.POST)
+                .hasRole("MODERATOR");
+        httpSecurity.authorizeRequests().antMatchers(HttpMethod.GET)
+                .hasRole("MODERATOR");
+        httpSecurity.authorizeRequests().antMatchers(HttpMethod.DELETE)
+                .hasRole("MODERATOR");
+        httpSecurity.authorizeRequests().antMatchers(HttpMethod.PUT)
+                .hasRole("MODERATOR");
+
         httpSecurity.authorizeRequests().anyRequest().hasRole("ADMIN");
 
         httpSecurity.httpBasic().authenticationEntryPoint(basicAuthenticationPoint);
@@ -44,6 +52,8 @@ public class SwaggerConfig extends WebSecurityConfigurerAdapter {
                 .roles("USER");
         auth.inMemoryAuthentication().withUser("admin1").password("qwerty")
                 .roles("USER", "ADMIN");
+        auth.inMemoryAuthentication().withUser("moderator").password("moder1")
+                .roles("MODERATOR");
     }
 
     @Bean

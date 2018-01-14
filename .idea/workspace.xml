@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="43361997-dcba-4582-86f2-c806b9530b6d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/goit7finalprojet-restservice.iml" afterPath="$PROJECT_DIR$/goit7finalprojet-restservice.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/BasicAuthenticationPoint.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/BasicAuthenticationPoint.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SwaggerConfig.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SwaggerConfig.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/EmployeeController.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/EmployeeController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -113,11 +109,9 @@
       <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SwaggerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -650,7 +644,7 @@
       <workItem from="1515594052210" duration="180000" />
       <workItem from="1515599977651" duration="11524000" />
       <workItem from="1515785505807" duration="62000" />
-      <workItem from="1515786158371" duration="27047000" />
+      <workItem from="1515786158371" duration="27900000" />
     </task>
     <task id="LOCAL-00001" summary="swagger added">
       <created>1515099297314</created>
@@ -670,7 +664,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109180000" />
+    <option name="totallyTimeSpent" value="110033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="23" width="1381" height="825" extended-state="0" />
@@ -692,7 +686,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3625498" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3625498" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23373175" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1185,11 +1179,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
