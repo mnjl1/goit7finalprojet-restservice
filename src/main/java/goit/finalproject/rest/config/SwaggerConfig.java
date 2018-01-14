@@ -26,8 +26,10 @@ public class SwaggerConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(HttpSecurity httpSecurity) throws Exception{
         httpSecurity.csrf().disable();
-        httpSecurity.authorizeRequests().antMatchers("/", "/status/**").permitAll()
-        .anyRequest().authenticated();
+//        httpSecurity.authorizeRequests().antMatchers("/", "/status/**").permitAll()
+//        .anyRequest().authenticated();
+
+        httpSecurity.authorizeRequests().anyRequest().authenticated();
 
         httpSecurity.httpBasic().authenticationEntryPoint(basicAuthenticationPoint);
 

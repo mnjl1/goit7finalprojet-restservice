@@ -20,7 +20,7 @@ public class EmployeeController {
     protected EmployeeService employeeService;
 
     @ApiOperation(value = "Add new employee")
-    @RequestMapping(method = RequestMethod.POST, produces = "application/json")
+    @RequestMapping(value = "/add", method = RequestMethod.POST, produces = "application/json")
     public ResponseEntity<Employee> addEmployee(@RequestBody Employee employee){
         employeeService.save(employee);
         return new ResponseEntity<>(employee, HttpStatus.CREATED);
