@@ -25,7 +25,7 @@ public class BasicAuthenticationPoint extends BasicAuthenticationEntryPoint {
     }
 
     public void afterPropertiesSet() throws Exception{
-        setRealmName("user1");
+        setRealmName("Dmytro");
         super.afterPropertiesSet();
     }
 }

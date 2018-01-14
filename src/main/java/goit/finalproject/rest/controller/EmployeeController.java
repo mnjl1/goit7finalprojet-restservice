@@ -27,7 +27,7 @@ public class EmployeeController {
     }
 
     @ApiOperation(value = "Update employee")
-    @RequestMapping(method = RequestMethod.PUT, produces = "application/json")
+    @RequestMapping(value = "/update",method = RequestMethod.PUT, produces = "application/json")
     public ResponseEntity<Void> updateEmployee(@RequestBody Employee employee){
         Employee existingEmployee = employeeService.getById(employee.getId());
         if (existingEmployee == null){

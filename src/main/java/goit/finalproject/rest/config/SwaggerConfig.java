@@ -3,10 +3,12 @@ package goit.finalproject.rest.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
@@ -26,10 +28,11 @@ public class SwaggerConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(HttpSecurity httpSecurity) throws Exception{
         httpSecurity.csrf().disable();
-//        httpSecurity.authorizeRequests().antMatchers("/", "/status/**").permitAll()
-//        .anyRequest().authenticated();
 
-        httpSecurity.authorizeRequests().anyRequest().authenticated();
+        httpSecurity.authorizeRequests().antMatchers(HttpMethod.GET)
+            .hasRole("USER");
+
+        httpSecurity.authorizeRequests().anyRequest().hasRole("ADMIN");
 
         httpSecurity.httpBasic().authenticationEntryPoint(basicAuthenticationPoint);
 
@@ -39,6 +42,8 @@ public class SwaggerConfig extends WebSecurityConfigurerAdapter {
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception{
         auth.inMemoryAuthentication().withUser("user1").password("12345")
                 .roles("USER");
+        auth.inMemoryAuthentication().withUser("admin1").password("qwerty")
+                .roles("USER", "ADMIN");
     }
 
     @Bean
