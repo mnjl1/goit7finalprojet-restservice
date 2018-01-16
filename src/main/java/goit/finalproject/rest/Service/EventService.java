@@ -8,6 +8,7 @@ import java.util.List;
 public interface EventService {
 
     Event findById(Long id);
+    List<Event> findByType(String type);
     List<Event> findAllEvent();
 
     Event save(Event event);

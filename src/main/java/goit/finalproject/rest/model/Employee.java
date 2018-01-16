@@ -1,5 +1,7 @@
 package goit.finalproject.rest.model;
 
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -10,35 +12,49 @@ public class Employee implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @ApiModelProperty(notes = "The database generated employee ID")
     private Long id;
 
-    @Column(name = "firstName")
+    @Column(name = "tabelid")
+    @ApiModelProperty(notes = "Tabel ID of employee")
+    private Long tabelID;
+
+    @Column(name = "firstname")
+    @ApiModelProperty(notes = "First name of employee")
     private String firstName;
 
-    @Column(name = "lastName")
+    @Column(name = "lastname")
+    @ApiModelProperty(notes = "Last name of employee")
     private String lastName;
 
     @Column(name="email")
+    @ApiModelProperty(notes = "Email of employee")
     private String email;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "department_id", referencedColumnName = "id")
+    @ApiModelProperty(notes = "Department of employee")
     private Department department;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "position_id", referencedColumnName = "id")
+    @ApiModelProperty(notes = "Position of employee")
     private Position position;
 
-    @Column(name="koefWork")
+    @Column(name="koefwork")
+    @ApiModelProperty(notes = "Coefficient of work")
     private Float koefWork;
 
-    @Column(name="koefIll")
+    @Column(name="koefill")
+    @ApiModelProperty(notes = "Coefficient of ill")
     private Float koefIll;
 
-    @Column(name="koefHoliday")
+    @Column(name="koefholiday")
+    @ApiModelProperty(notes = "Coefficient of holiday")
     private Float koefHoliday;
 
-    @Column(name="koefNotWork")
+    @Column(name="koefnotwork")
+    @ApiModelProperty(notes = "Coefficient of not work")
     private Float koefNotWork;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "employee")
@@ -60,14 +76,17 @@ public class Employee implements Serializable {
     public Employee() {
     }
 
-    public Employee(String firstName, String lastName, String email) {
+    public Employee(Long tabelID, String firstName, String lastName, String email) {
+        this.tabelID = tabelID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
     }
 
-    public Employee(String firstName, String lastName, String email, Department department, Position position,
+    public Employee(Long tabelID, String firstName, String lastName, String email,
+                    Department department, Position position,
                     Float koefWork, Float koefIll, Float koefHoliday, Float koefNotWork) {
+        this.tabelID = tabelID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -85,6 +104,14 @@ public class Employee implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getTabelID() {
+        return tabelID;
+    }
+
+    public void setTabelID(Long tabelID) {
+        this.tabelID = tabelID;
     }
 
     public String getFirstName() {
@@ -159,26 +186,27 @@ public class Employee implements Serializable {
         this.koefNotWork = koefNotWork;
     }
 
-    public List<DateStatus> getStatuses() {
-        return statuses;
-    }
+//    public List<DateStatus> getStatuses() {
+//        return statuses;
+//    }
+//
+//    public void setStatuses(List<DateStatus> statuses) {
+//        this.statuses = statuses;
+//    }
+//
+//    public List<DateEvent> getEvents() {
+//        return events;
+//    }
+//
+//    public void setEvents(List<DateEvent> events) {
+//        this.events = events;
+//    }
 
-    public void setStatuses(List<DateStatus> statuses) {
-        this.statuses = statuses;
-    }
-
-    public List<DateEvent> getEvents() {
-        return events;
-    }
-
-    public void setEvents(List<DateEvent> events) {
-        this.events = events;
-    }
 
     @Override
     public String toString() {
         return "Employee{" +
-                "id=" + id +
+                "tabelID=" + tabelID +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
@@ -188,8 +216,6 @@ public class Employee implements Serializable {
                 ", koefIll=" + koefIll +
                 ", koefHoliday=" + koefHoliday +
                 ", koefNotWork=" + koefNotWork +
-//                ", statuses=" + statuses +
-//                ", events=" + events +
                 '}';
     }
 }

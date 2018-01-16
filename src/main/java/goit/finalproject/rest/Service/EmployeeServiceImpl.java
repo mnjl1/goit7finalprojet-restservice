@@ -83,4 +83,15 @@ public class EmployeeServiceImpl implements EmployeeService {
         log.info("Employees by last name {} not exist",email);
         return null;
     }
+
+    @Override
+    public Employee findByTabelID(Long tabelID) {
+        log.info("Find all Employees by tabel ID {}", tabelID);
+        Employee list = employeeRepository.findByTabelID(tabelID);
+        if (list!=null){
+            return list;
+        }
+        log.info("Employees by last name {} not exist",tabelID);
+        return null;
+    }
 }

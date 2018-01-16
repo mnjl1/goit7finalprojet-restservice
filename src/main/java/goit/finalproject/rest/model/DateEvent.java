@@ -1,5 +1,7 @@
 package goit.finalproject.rest.model;
 
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
@@ -10,23 +12,27 @@ public class DateEvent implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @ApiModelProperty(notes = "The database generated dateEvent ID")
     private Long id;
 
-    @Column(name="date")
-//    private Date date;
+    @Column(name="dateevent")
+    @ApiModelProperty(notes = "Date of event")
     private String date;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "event_id",referencedColumnName = "id")
+    @ApiModelProperty(notes = "Type of event")
     private Event event;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "department_id", referencedColumnName = "id")
+    @ApiModelProperty(notes = "All departments take part in the event")
     private Set<Department> departments;
 
     //1
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "employee_id", referencedColumnName = "id")
+    @ApiModelProperty(notes = "All employees take part in the event")
     private Set<Employee> employees;
 
     //2

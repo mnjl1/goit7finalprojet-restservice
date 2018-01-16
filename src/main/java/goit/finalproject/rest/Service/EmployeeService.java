@@ -19,6 +19,6 @@ public interface EmployeeService {
     List<Employee> findByLastName(String lastName);
     List<Employee> findByEmail(String email);
 
-
+    Employee findByTabelID(Long tabelID);
 
 }

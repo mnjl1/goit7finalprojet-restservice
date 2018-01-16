@@ -31,7 +31,7 @@ public class StatusWorkController {
 
     @ApiOperation(value = "Find status by ID", response = StatusWork.class)
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<StatusWork> getDepartment(@PathVariable("id") long id){
+    public ResponseEntity<StatusWork> getStatusWork(@PathVariable("id") long id){
         StatusWork statusWork = statusWorkService.findById(id);
         if (statusWork == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -48,7 +48,7 @@ public class StatusWorkController {
 
     @ApiOperation(value = "Update status")
     @RequestMapping(value = "/update",method = RequestMethod.PUT, produces = "application/json")
-    public ResponseEntity<Void> updateDepartment(@RequestBody StatusWork statusWork){
+    public ResponseEntity<Void> updateStatusWork(@RequestBody StatusWork statusWork){
         StatusWork existingStatusWork = statusWorkService.findById(statusWork.getId());
         if (existingStatusWork == null){
             return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
@@ -61,7 +61,7 @@ public class StatusWorkController {
 
     @ApiOperation(value = "Delete status")
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE, produces = "application/json")
-    public ResponseEntity<Void> deleteStatus(@PathVariable("id") long id){
+    public ResponseEntity<Void> deleteStatusWork(@PathVariable("id") long id){
         StatusWork statusWork = statusWorkService.findById(id);
         if (statusWork == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);

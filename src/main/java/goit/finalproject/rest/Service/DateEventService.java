@@ -4,12 +4,14 @@ package goit.finalproject.rest.Service;
 import goit.finalproject.rest.model.DateEvent;
 import goit.finalproject.rest.model.Department;
 import goit.finalproject.rest.model.Employee;
+import goit.finalproject.rest.model.WorkReport;
 
 import java.util.List;
 
 public interface DateEventService {
 
     DateEvent findById(Long id);
+//    DateEvent findByDate(String date);
     DateEvent findByDate(String date);
     List<DateEvent> findAllEvents();
 
@@ -27,6 +29,6 @@ public interface DateEventService {
 //    void createEventToday();
 
 //    report  for employee of period
-    void reportEmployeeOfPeriod(Employee employee, String dateBeginPeriod, String dateEndPeriod);
+    WorkReport reportEmployeeOfPeriod(Employee employee, String dateBeginPeriod, String dateEndPeriod);
 
 }

@@ -1,5 +1,7 @@
 package goit.finalproject.rest.model;
 
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -11,17 +13,20 @@ public class Department implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @ApiModelProperty(notes = "The database generated department ID")
     private Long id;
 
     @Column(name="name")
+    @ApiModelProperty(notes = "Name of department")
     private String name;
 
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "departments")
-    private List<DateEvent> dateEvents;
+    @ApiModelProperty(notes = "List of event with date for this department")
+    private List<DateEvent> dateevents;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "department")
+    @ApiModelProperty(notes = "Employees in this department")
     private Set<Employee> employees;
-
 
     public Department() {
     }
@@ -46,12 +51,12 @@ public class Department implements Serializable {
         this.name = name;
     }
 
-    public List<DateEvent> getDateEvents() {
-        return dateEvents;
+    public List<DateEvent> getDateevents() {
+        return dateevents;
     }
 
-    public void setDateEvents(List<DateEvent> dateEvents) {
-        this.dateEvents = dateEvents;
+    public void setDateevents(List<DateEvent> dateevents) {
+        this.dateevents = dateevents;
     }
 
     public Set<Employee> getEmployees() {

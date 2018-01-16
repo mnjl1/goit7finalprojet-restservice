@@ -1,6 +1,8 @@
 package goit.finalproject.rest.model;
 
 
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -10,18 +12,21 @@ public class DateStatus implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @ApiModelProperty(notes = "The database generated dateStatus ID")
     private Long id;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "employee_id", referencedColumnName = "id")
+    @ApiModelProperty(notes = "Employee")
     private Employee employee;
 
-    @Column(name="date")
-//    private Date date;
+    @Column(name="datestatus")
+    @ApiModelProperty(notes = "Date")
     private String date;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "status_id", referencedColumnName = "id")
+    @ApiModelProperty(notes = "Type of status")
     private StatusWork statusWork;
 
     public DateStatus() {

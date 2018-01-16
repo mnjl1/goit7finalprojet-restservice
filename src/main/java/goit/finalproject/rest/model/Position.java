@@ -1,5 +1,7 @@
 package goit.finalproject.rest.model;
 
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
@@ -10,16 +12,20 @@ public class Position implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @ApiModelProperty(notes = "The database generated position ID")
     private Long id;
 
     @Column(name="name")
+    @ApiModelProperty(notes = "Name of position")
     private String name;
 
     @Column(name="salary")
+    @ApiModelProperty(notes = "Salary of position")
     private Float salary;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "position")
-    private Set<Employee> employees;
+//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "position")
+//    @ApiModelProperty(notes = "Employees with this position")
+//    private Set<Employee> employees;
 
 
     public Position() {
@@ -51,13 +57,13 @@ public class Position implements Serializable {
         return id;
     }
 
-    public Set<Employee> getEmployees() {
-        return employees;
-    }
-
-    public void setEmployees(Set<Employee> employees) {
-        this.employees = employees;
-    }
+//    public Set<Employee> getEmployees() {
+//        return employees;
+//    }
+//
+//    public void setEmployees(Set<Employee> employees) {
+//        this.employees = employees;
+//    }
 
     public void setId(Long id) {
         this.id = id;

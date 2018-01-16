@@ -4,6 +4,7 @@ package goit.finalproject.rest.Service;
 import goit.finalproject.rest.model.DateEvent;
 import goit.finalproject.rest.model.Department;
 import goit.finalproject.rest.model.Employee;
+import goit.finalproject.rest.model.WorkReport;
 import goit.finalproject.rest.repository.DateEventRepository;
 import goit.finalproject.rest.repository.DepartmentRepository;
 import goit.finalproject.rest.repository.EmployeeRepository;
@@ -139,7 +140,9 @@ public class DateEventServiceImpl implements  DateEventService {
     }
 
     @Override
-    public void reportEmployeeOfPeriod(Employee employee, String dateBeginPeriod, String dateEndPeriod) {
+    public WorkReport reportEmployeeOfPeriod(Employee employee, String dateBeginPeriod, String dateEndPeriod) {
+
+        WorkReport report = new WorkReport();
 
         log.info("Start make of report for employee: {}", employee);
         //out data
@@ -162,7 +165,7 @@ public class DateEventServiceImpl implements  DateEventService {
 //        count of period
         long s = (calendarEndPeriod.getTime().getTime() - calendarBeginPeriod.getTime().getTime())/86400000;
 
-        for (int i = 0; i < s + 1; i++) {               //список по дням периода
+        for (int i = 0; i < s + 1; i++) {               //days of period
             if (i != 0) {
                 calendarBeginPeriod.add(Calendar.DATE, 1);
             }
@@ -173,18 +176,14 @@ public class DateEventServiceImpl implements  DateEventService {
                     + (calendarBeginPeriod.get(Calendar.MONTH) + 1)
                     + " "
                     + calendarBeginPeriod.get(Calendar.YEAR);
-            //System.out.print(dateDay+" / ");
-
             Set<Employee> employeeSet = new HashSet<>();
             DateEvent dateEvent = dateEventRepository.findByDate(dateDay);
 
-            if (dateEvent!=null) {                            //событие на заданую дату вообще есть
+            if (dateEvent!=null) {                            //event of this date is Exist?
                 employeeSet = dateEvent.getEmployees();
                 for (Employee e : employeeSet) {
                     if (employee.getId().equals(e.getId())) {
-                        //System.out.println("true");            //в списке события на эту дату есть такой сотрудник
 
-                        //прибавляем ему ставку*коеффициент
                         Float koef = 1f;
                         switch (dateEvent.getEvent().getType()){
                             case "work": koef = e.getKoefWork();
@@ -192,7 +191,6 @@ public class DateEventServiceImpl implements  DateEventService {
                             case "holiday": koef = e.getKoefHoliday();
                             case "not work": koef = e.getKoefNotWork();
                         }
-                        //добавляем дату в список отработанных дней
                         workDays.add(dateDay +" "+ dateEvent.getEvent().getType()+" "+e.getPosition().getSalary()
                                 +" "+koef.toString());
                         reportSalaryOfPeriod += e.getPosition().getSalary()*koef;
@@ -201,27 +199,14 @@ public class DateEventServiceImpl implements  DateEventService {
             }else System.out.println("set of this date "+dateDay+" not exist");
         }
         log.info("Start print of report for employee: {}", employee);
-        System.out.println("=======  REPORT  =======");
-        System.out.print(employeeReport.getId());
-        System.out.print(" ");
-        System.out.print(employeeReport.getFirstName());
-        System.out.print(" ");
-        System.out.print(employeeReport.getLastName());
-        System.out.println(" ");
-        System.out.print(employeeReport.getEmail());
-        System.out.print(" ");
-        System.out.print(employeeReport.getDepartment().getName());
-        System.out.print(" ");
-        System.out.print(employeeReport.getPosition().getName());
-        System.out.println(" ");
-        System.out.print("daily salary: ");
-        System.out.println(employeeReport.getPosition().getSalary());
 
-        System.out.println("WORK DAYS : COUNT = "+ workDays.size());
-        for(String s1: workDays){
-            System.out.println(s1);
-        }
-        System.out.println("REZULT = " + reportSalaryOfPeriod);
+        report.setTabelID(employee.getTabelID());
+        report.setBeginPeriod(dateBeginPeriod);
+        report.setEndPeriod(dateEndPeriod);
 
+        report.setCountDay(workDays.size());
+        report.setSalaryPeriod(reportSalaryOfPeriod);
+
+        return report;
     }
 }

@@ -22,6 +22,12 @@ public class EventServiceImpl implements EventService{
     }
 
     @Override
+    public List<Event> findByType(String type) {
+        log.info("Find Event by type {}", type);
+        return eventRepository.findByType(type);
+    }
+
+    @Override
     public List<Event> findAllEvent() {
         List<Event> list = eventRepository.findAll();
         if(list!=null){

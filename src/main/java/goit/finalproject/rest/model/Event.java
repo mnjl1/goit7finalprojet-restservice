@@ -1,5 +1,7 @@
 package goit.finalproject.rest.model;
 
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -10,13 +12,16 @@ public class Event implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @ApiModelProperty(notes = "The database generated event ID")
     private Long id;
 
     @Column(name="type")
+    @ApiModelProperty(notes = "Type of event")
     private String type;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "event")
-    private List<DateEvent> dateEvents;
+//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "event")
+//    @ApiModelProperty(notes = "List of event with date")
+//    private List<DateEvent> dateEvents;
 
     public Event() {
     }
