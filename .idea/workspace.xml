@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43361997-dcba-4582-86f2-c806b9530b6d" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_1_5_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_13_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/email/EmailService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/email/Mail.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SwaggerConfig.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SwaggerConfig.java" />
+      <change beforePath="$PROJECT_DIR$/goit7finalprojet-restservice.iml" afterPath="$PROJECT_DIR$/goit7finalprojet-restservice.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Application.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Application.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateStatusController.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateStatusController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,14 +37,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="EmployeeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/EmployeeController.java">
+      <file leaf-file-name="DateEventController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateEventController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,81 +57,104 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="75" column="48" lean-forward="false" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/email/Mail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="52" column="18" lean-forward="false" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+              <folding>
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#479#480#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#601#602#0" expanded="true" />
+                <element signature="e#629#630#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
+                <element signature="e#739#740#0" expanded="true" />
+                <element signature="e#777#778#0" expanded="true" />
+                <element signature="e#811#812#0" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
+                <element signature="e#887#888#0" expanded="true" />
+                <element signature="e#925#926#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/email/EmailService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+              <folding>
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#709#710#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DateStatusController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateStatusController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/EventController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DateStatusService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateStatusService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EmployeeService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EmployeeServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-              <folding>
-                <element signature="e#654#655#0" expanded="true" />
-                <element signature="e#708#709#0" expanded="true" />
-                <element signature="e#762#763#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#867#868#0" expanded="true" />
-                <element signature="e#918#919#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/EmployeeRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SwaggerConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicAuthenticationPoint.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/BasicAuthenticationPoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -150,9 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/EmployeeStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Event.java" />
-        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Status.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9a3deb8c-4f19-4f78-86ef-e6e95f079456/console_1.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9a3deb8c-4f19-4f78-86ef-e6e95f079456/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9a3deb8c-4f19-4f78-86ef-e6e95f079456/console_2.sql" />
@@ -182,7 +210,6 @@
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/PositionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EventServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/StatusWorkController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateStatusController.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DepartmentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/EventController.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/PositionController.java" />
@@ -192,15 +219,19 @@
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/DateEventRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SecurityUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EmployeeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EmployeeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SpringSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/EmployeeController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/BasicAuthenticationPoint.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateStatusController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/email/Mail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/email/EmailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Application.java" />
       </list>
     </option>
   </component>
@@ -333,6 +364,17 @@
               <item name="finalproject" type="462c0819:PsiDirectoryNode" />
               <item name="rest" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goit7finalprojet-restservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goit7finalprojet-restservice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="goit" type="462c0819:PsiDirectoryNode" />
+              <item name="finalproject" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="email" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="goit7finalprojet-restservice" type="b2602c69:ProjectViewProjectNode" />
@@ -644,7 +686,7 @@
       <workItem from="1515594052210" duration="180000" />
       <workItem from="1515599977651" duration="11524000" />
       <workItem from="1515785505807" duration="62000" />
-      <workItem from="1515786158371" duration="27900000" />
+      <workItem from="1515786158371" duration="31751000" />
     </task>
     <task id="LOCAL-00001" summary="swagger added">
       <created>1515099297314</created>
@@ -664,7 +706,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110033000" />
+    <option name="totallyTimeSpent" value="113884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="23" width="1381" height="825" extended-state="0" />
@@ -686,10 +728,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3625498" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3625498" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23373175" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23373175" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28385228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -754,28 +796,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1262ddcd-bfe6-4e39-9034-370228ddeb65/console.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Status.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/StatusWorkServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/StatusWorkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/RoleController.java" />
     <entry file="file://$PROJECT_DIR$/src/test/goit.java" />
     <entry file="file://$PROJECT_DIR$/src/test/goit/finalproject/rest/SpringBootWebApplicationTests.java" />
@@ -799,22 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Department.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -828,24 +832,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/DateEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/StatusWork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -909,36 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/PositionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/PositionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateStatusServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="107" column="19" lean-forward="false" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EventServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -946,34 +902,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateStatusController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="75" lean-forward="false" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/EventController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,55 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="97" lean-forward="false" selection-start-line="29" selection-start-column="97" selection-end-line="29" selection-end-column="97" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/DateEventRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="57" lean-forward="false" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-          <folding>
-            <element signature="e#2655#2656#0" expanded="false" />
-            <element signature="e#2682#2683#0" expanded="false" />
-            <element signature="e#2766#2767#0" expanded="false" />
-            <element signature="e#2793#2794#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/PositionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateEventController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DepartmentController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1067,22 +946,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1094,10 +957,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateStatusService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SpringSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="210">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/BasicAuthenticationPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/DateEventRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/StatusWork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" column="97" lean-forward="false" selection-start-line="29" selection-start-column="97" selection-end-line="29" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-169">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/EmployeeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/EmployeeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="923">
+          <caret line="70" column="39" lean-forward="true" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/PositionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/DateEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1195">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1115,28 +1088,88 @@
         <state relative-caret-position="195">
           <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
           <folding>
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#762#763#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="false" />
+            <element signature="e#708#709#0" expanded="false" />
+            <element signature="e#762#763#0" expanded="false" />
+            <element signature="e#815#816#0" expanded="false" />
+            <element signature="e#867#868#0" expanded="false" />
+            <element signature="e#918#919#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/EmployeeRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/PositionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/PositionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/StatusWorkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SpringSecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/StatusWorkServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateStatusServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="107" column="19" lean-forward="false" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateStatusService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateEventController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateStatusController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/EventController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1149,39 +1182,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/EmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state relative-caret-position="387">
+          <caret line="75" column="48" lean-forward="false" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/BasicAuthenticationPoint.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/email/Mail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="18" lean-forward="false" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+          <folding>
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/email/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SwaggerConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+          <folding>
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

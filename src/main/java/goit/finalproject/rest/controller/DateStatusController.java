@@ -8,4 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/tabel")
 @Api(value = "datestatus", description = "Operations with Status whith Date")
 public class DateStatusController {
+
+
+
 }
