@@ -1,5 +1,6 @@
 package goit.finalproject.rest.Service;
 
+import goit.finalproject.rest.email.EmailService;
 import goit.finalproject.rest.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -71,7 +72,11 @@ class TaskHolder {
         workReportService.addAllReportForAllEmployeesFirstDayOfMonth(date);
     }
 
-//    @Scheduled(cron = "0 0 0 1 * *") //ONCE A MONTH
+
+    @Autowired
+    EmailService emailService;
+
+//    @Scheduled(cron = "0 0 1 1 * *") //ONCE A MONTH
     public void mailRobot(){
         String date = "";
         List<WorkReport> reportList = workReportService.findAllReportForAllEmployeesFirstDayOfMonth(date);
