@@ -8,4 +8,6 @@ import java.util.List;
 public interface WorkReportRepository extends JpaRepository<WorkReport, Long> {
 
     List<WorkReport> findByTabelIDAndBeginPeriodAndEndPeriod(Long tabelID, String beginPeriod, String endPeriod);
+    
+    List<WorkReport> findByTabelID(Long tabelID);
 }

@@ -41,7 +41,7 @@ class TaskHolder {
 
 //    @Scheduled(cron="0 0 8 * * *") EVERY DAY AT 8.00 O'CLOCK
 //    @Scheduled(fixedDelay=1000) //every seconds
-    @Scheduled(fixedDelay=60000) //every 60 seconds
+//    @Scheduled(fixedDelay=60000) //every 60 seconds
     public void newDay() {
         //do some work
         String time = formatForSecondNow.format(new Date());
@@ -86,6 +86,9 @@ class TaskHolder {
 
 //    @Scheduled(fixedDelay=160000) //every 160 seconds
     public void initDB(){
+//        проверить наличие базьі, сoздать если ее нет и заполнить
+
+
         log.info("start init position");
         List<Position> positionList = new ArrayList<>();
         Position p1 = new Position("director", 100f);

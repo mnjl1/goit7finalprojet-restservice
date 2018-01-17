@@ -2,35 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43361997-dcba-4582-86f2-c806b9530b6d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SpringSecurityConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/EmployeeController.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/goit/finalproject/rest/repository/StatusWorkRepositoryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/goit/finalproject/rest/service/StatusWorkServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/application-integrationtest.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/goit/finalproject/rest/service/StatusWorkServiceTest.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/goit7finalprojet-restservice.iml" afterPath="$PROJECT_DIR$/goit7finalprojet-restservice.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EmployeeService.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EmployeeService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EmployeeServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EmployeeServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EventService.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EventService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EventServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EventServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SwaggerConfig.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SwaggerConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateEventController.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateEventController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateStatusController.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateStatusController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DepartmentController.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DepartmentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/EventController.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/EventController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/PositionController.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/PositionController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/StatusWorkController.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/StatusWorkController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/DateEvent.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/DateEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/DateStatus.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/DateStatus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Department.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Department.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Employee.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Employee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Event.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Event.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Position.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Position.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/StatusWork.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/StatusWork.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/EmployeeRepository.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/EmployeeRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/TaskHolder.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/TaskHolder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/WorkReportService.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/WorkReportService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/WorkReportServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/WorkReportServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/WorkReportController.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/WorkReportController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/WorkReportRepository.java" afterPath="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/WorkReportRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/goit/finalproject/rest/config/RepositoryConfiguration.java" afterPath="$PROJECT_DIR$/src/test/goit/finalproject/rest/config/RepositoryConfiguration.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/goit/finalproject/rest/ApplicationTest.java" afterPath="$PROJECT_DIR$/src/test/java/goit/finalproject/rest/ApplicationTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/goit/finalproject/rest/config/RepositoryConfiguration.java" afterPath="$PROJECT_DIR$/src/test/java/goit/finalproject/rest/config/RepositoryConfiguration.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,12 +41,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <file leaf-file-name="StatusWorkServiceTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/goit/finalproject/rest/service/StatusWorkServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="189">
+              <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,12 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/StatusWorkServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/StatusWorkService.java" />
-        <option value="$PROJECT_DIR$/src/test/goit/finalproject/rest/SpringBootWebApplicationTests.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/goit/finalproject/rest/config/ApplicationTest.java" />
-        <option value="$PROJECT_DIR$/src/test/goit/finalproject/rest/service/StatusWorkServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/DateStatusRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/EventRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/DepartmentRepository.java" />
@@ -115,28 +98,34 @@
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Tabel.java" />
         <option value="$PROJECT_DIR$/../finalDeveloper01/src/main/java/com/loban/finalProject/model/WorkReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/FunctionController.java" />
-        <option value="$PROJECT_DIR$/src/test/goit/finalproject/rest/config/RepositoryConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/EmployeeRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EmployeeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EmployeeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/WorkReportRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/DateEventRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateEventController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/WorkReportService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/WorkReportServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/WorkReportController.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/StatusWork.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/DateEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/DateStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Department.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/WorkReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/WorkReportRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/WorkReportService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/WorkReportServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/WorkReportController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/TaskHolder.java" />
+        <option value="$PROJECT_DIR$/src/test/goit/finalproject/rest/repository/StatusWorkRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-integrationtest.properties" />
+        <option value="$PROJECT_DIR$/src/test/goit/finalproject/rest/config/RepositoryConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/test/goit/finalproject/rest/service/StatusWorkServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/application-integrationtest.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/goit/finalproject/rest/service/StatusWorkServiceTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -215,13 +204,26 @@
               <item name="goit7finalprojet-restservice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goit7finalprojet-restservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goit7finalprojet-restservice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goit7finalprojet-restservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goit7finalprojet-restservice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="goit7finalprojet-restservice" type="b2602c69:ProjectViewProjectNode" />
               <item name="goit7finalprojet-restservice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="goit" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -229,7 +231,7 @@
               <item name="goit7finalprojet-restservice" type="b2602c69:ProjectViewProjectNode" />
               <item name="goit7finalprojet-restservice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="goit" type="462c0819:PsiDirectoryNode" />
               <item name="finalproject" type="462c0819:PsiDirectoryNode" />
@@ -238,7 +240,7 @@
               <item name="goit7finalprojet-restservice" type="b2602c69:ProjectViewProjectNode" />
               <item name="goit7finalprojet-restservice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="goit" type="462c0819:PsiDirectoryNode" />
               <item name="finalproject" type="462c0819:PsiDirectoryNode" />
@@ -248,7 +250,29 @@
               <item name="goit7finalprojet-restservice" type="b2602c69:ProjectViewProjectNode" />
               <item name="goit7finalprojet-restservice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="goit" type="462c0819:PsiDirectoryNode" />
+              <item name="finalproject" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goit7finalprojet-restservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goit7finalprojet-restservice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="goit" type="462c0819:PsiDirectoryNode" />
+              <item name="finalproject" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goit7finalprojet-restservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goit7finalprojet-restservice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -279,7 +303,11 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JAVA\GoIt\Projects\goit7finalprojet-restservice\src\test\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="goit.finalproject.rest" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -309,7 +337,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="JUnit.StatusWorkServiceTest">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -459,8 +487,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.StatusWorkServiceTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.StatusWorkServiceTest" />
+        <item index="1" class="java.lang.String" itemvalue="Spring Boot.Application" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.ApplicationTest" />
       </list>
     </recent_temporary>
@@ -493,7 +521,7 @@
       <workItem from="1516020240955" duration="269000" />
       <workItem from="1516026306449" duration="17009000" />
       <workItem from="1516089253848" duration="607000" />
-      <workItem from="1516090015749" duration="71000" />
+      <workItem from="1516090015749" duration="9110000" />
     </task>
     <task id="LOCAL-00001" summary="swagger added">
       <created>1515099297314</created>
@@ -513,7 +541,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117202000" />
+    <option name="totallyTimeSpent" value="126241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -536,8 +564,8 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4739819" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37669683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22878624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -552,40 +580,6 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16863587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37443438" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27765843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -626,14 +620,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/DateStatusRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/PositionRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DepartmentServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateStatusService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateStatusServiceImpl.java" />
@@ -650,25 +641,18 @@
     <entry file="file://$PROJECT_DIR$/../finalDeveloper01/src/main/java/com/loban/finalProject/model/WorkReport.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/FunctionController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateStatusController.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/goit/finalproject/rest/config/RepositoryConfiguration.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/EmployeeController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Application.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/AppConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SpringSecurityConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/EmployeeRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EmployeeService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/WorkReportRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/DateEventRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/DateEventController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/PositionService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/PositionServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/WorkReportServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/goit/finalproject/rest/service/StatusWorkServiceTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/WorkReportService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/StatusWorkController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Event.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/WorkReportController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/BasicAuthenticationPoint.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/DateStatus.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/StatusWork.java" />
@@ -676,7 +660,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/EmployeeServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/Employee.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/DateEvent.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventServiceImpl.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.13.RELEASE/spring-context-4.3.13.RELEASE.jar!/org/springframework/scheduling/support/ScheduledMethodRunnable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -686,12 +669,111 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/model/WorkReport.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/config/SwaggerConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/TaskHolder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/repository/WorkReportRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/WorkReportService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/WorkReportServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/StatusWorkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="33" column="80" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/controller/WorkReportController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="35" column="78" lean-forward="false" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/DateEventServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="200" column="10" lean-forward="false" selection-start-line="200" selection-start-column="10" selection-end-line="200" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="294">
+          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/goit/finalproject/rest/Service/TaskHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="87" column="6" lean-forward="false" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/goit/finalproject/rest/repository/StatusWorkRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/goit/finalproject/rest/config/RepositoryConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application-integrationtest.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/goit/finalproject/rest/service/StatusWorkServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

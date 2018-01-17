@@ -18,11 +18,11 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.util.Properties;
 
-//@Configuration
-//@EnableAutoConfiguration
-//@EntityScan(basePackages = {"goit.finalproject.rest.model"})
-//@EnableJpaRepositories(basePackages = {"goit.finalproject.rest.repository"})
-//@EnableTransactionManagement
+@Configuration
+@EnableAutoConfiguration
+@EntityScan(basePackages = {"goit.finalproject.rest.model"})
+@EnableJpaRepositories(basePackages = {"goit.finalproject.rest.repository"})
+@EnableTransactionManagement
 public class RepositoryConfiguration {
 
 }

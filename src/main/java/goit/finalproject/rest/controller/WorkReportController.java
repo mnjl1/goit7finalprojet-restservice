@@ -30,6 +30,16 @@ public class WorkReportController {
         return new ResponseEntity<>(workReports, HttpStatus.OK);
     }
 
+    @ApiOperation(value = "List of all reports by tabel id")
+    @RequestMapping(value = "/list/{tabelID}",method = RequestMethod.GET, produces = "application/json")
+    public ResponseEntity<List<WorkReport>> getReportByID(@PathVariable("tabelID") long tabelID){
+        List<WorkReport> workReports = workReportService.findByTabelId(tabelID);
+        if (workReports.isEmpty()){
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(workReports, HttpStatus.OK);
+    }
+
     @ApiOperation(value = "Find report by tabelID and period", response = WorkReport.class)
     @RequestMapping(value = "/{tabelID}/{begin}/{end}", method = RequestMethod.GET)
     public ResponseEntity<WorkReport> getReport(@PathVariable("tabelID") long tabelID,

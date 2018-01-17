@@ -196,9 +196,9 @@ public class DateEventServiceImpl implements  DateEventService {
                         reportSalaryOfPeriod += e.getPosition().getSalary()*koef;
                     }
                 }
-            }else System.out.println("set of this date "+dateDay+" not exist");
+            }//else log.info("set event of date "+dateDay+" not exist");
         }
-        log.info("Start print of report for employee: {}", employee);
+        //log.info("Start print of report for employee: {}", employee);
 
         report.setTabelID(employee.getTabelID());
         report.setBeginPeriod(dateBeginPeriod);

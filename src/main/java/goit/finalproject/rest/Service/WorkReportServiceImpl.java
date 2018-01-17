@@ -33,7 +33,6 @@ public class WorkReportServiceImpl implements WorkReportService{
             log.info("Add new report for emlpoyee {}", report.getTabelID());
             return workReportRepository.save(report);
         }
-
         return null;
     }
 
@@ -41,6 +40,16 @@ public class WorkReportServiceImpl implements WorkReportService{
     public List<WorkReport> findAll() {
         log.info("Find all reports");
         return workReportRepository.findAll();
+    }
+
+    @Override
+    public List<WorkReport> findByTabelId(Long tabelID) {
+        log.info("Find report by tabel ID {}", tabelID);
+        List<WorkReport> list = workReportRepository.findByTabelID(tabelID);
+        if (list.size()>0){
+            return list;
+        }
+        return null;
     }
 
     @Override
@@ -80,10 +89,6 @@ public class WorkReportServiceImpl implements WorkReportService{
                 +(calendar.get(Calendar.MONTH)+1)
                 +" "
                 +calendar.get(Calendar.YEAR);
-
-
-        System.out.println(beginPeriod);
-        System.out.println(endPeriod);
 
         List<Employee> employees = employeeRepository.findAll();
 
@@ -127,10 +132,6 @@ public class WorkReportServiceImpl implements WorkReportService{
                 +(calendar.get(Calendar.MONTH)+1)
                 +" "
                 +calendar.get(Calendar.YEAR);
-
-
-        System.out.println(beginPeriod);
-        System.out.println(endPeriod);
 
         List<Employee> employees = employeeRepository.findAll();
 
