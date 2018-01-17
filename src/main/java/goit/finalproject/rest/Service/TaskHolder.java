@@ -207,7 +207,7 @@ class TaskHolder {
             employeeService.save(em);
         }
 
-        List<Employee> employeeList = employeeService.findAllEmployees();
+        List<Employee> employeeList = employeeService.getAll();
 
         List<String> dates = new ArrayList<>();
         dates.add("20 12 2017");

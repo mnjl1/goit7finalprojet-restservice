@@ -8,7 +8,7 @@ import goit.finalproject.rest.model.WorkReport;
 
 import java.util.List;
 
-public interface DateEventService {
+public interface DateEventService  {
 
     DateEvent findById(Long id);
 //    DateEvent findByDate(String date);
@@ -24,11 +24,11 @@ public interface DateEventService {
     List<DateEvent> findByEmployeeAndDate(Employee employee, String date);
     List<DateEvent> findByDepartment(Department department);
 
-//    automatic create new event of day (event = workDay, set = all employees with status = work);
+    //    automatic create new event of day (event = workDay, set = all employees with status = work);
     DateEvent createEventNewDay(String date);
 //    void createEventToday();
 
+
 //    report  for employee of period
     WorkReport reportEmployeeOfPeriod(Employee employee, String dateBeginPeriod, String dateEndPeriod);
-
 }

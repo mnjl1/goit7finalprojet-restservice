@@ -16,7 +16,6 @@ import java.util.List;
 @RequestMapping("/tabel")
 @Api(value = "datestatus", description = "Operations with Status with Date")
 public class DateStatusController {
-
     @Autowired
     private DateStatusService dateStatusService;
 
@@ -56,7 +55,7 @@ public class DateStatusController {
     @ApiOperation(value = "Find dateStatus by ID of employee", response = DateStatus.class)
     @RequestMapping(value = "/employee/{id}", method = RequestMethod.GET)
     public ResponseEntity<List<DateStatus>> getDateEventByEmployee(@PathVariable("id") Long id){
-        List<DateStatus> dateStatusList = dateStatusService.findByEmployee(employeeService.findById(id));
+        List<DateStatus> dateStatusList = dateStatusService.findByEmployee(employeeService.getById(id));
         if (dateStatusList == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
@@ -66,7 +65,7 @@ public class DateStatusController {
     @ApiOperation(value = "Find dateStatus by ID of employee and date", response = DateStatus.class)
     @RequestMapping(value = "/employeeDate/{id}/{date}", method = RequestMethod.GET)
     public ResponseEntity<List<DateStatus>> getDateEventByEmployee(@PathVariable("id") Long id, @PathVariable("date") String date){
-        List<DateStatus> dateStatusList = dateStatusService.findByEmployeeAndDate(employeeService.findById(id), date);
+        List<DateStatus> dateStatusList = dateStatusService.findByEmployeeAndDate(employeeService.getById(id), date);
         if (dateStatusList == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }

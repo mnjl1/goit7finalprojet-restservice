@@ -15,14 +15,13 @@ import java.util.List;
 @RequestMapping("/employee")
 @Api(value = "employee", description = "Operations with Employee")
 public class EmployeeController {
-
     @Autowired
     private EmployeeService employeeService;
 
     @ApiOperation(value = "List of all employees")//, response = Iterable.class)
     @RequestMapping(value = "/list",method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<List<Employee>> getAllEmployee(){
-        List<Employee> employeeList = employeeService.findAllEmployees();
+        List<Employee> employeeList = employeeService.getAll();
         if (employeeList.isEmpty()){
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
@@ -32,7 +31,7 @@ public class EmployeeController {
     @ApiOperation(value = "Find employee by ID", response = Employee.class)
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ResponseEntity<Employee> getEmployee(@PathVariable("id") long id){
-        Employee employee = employeeService.findById(id);
+        Employee employee = employeeService.getById(id);
         if (employee == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
@@ -75,14 +74,21 @@ public class EmployeeController {
         employeeService.save(employee);
         return new ResponseEntity<>(employee, HttpStatus.CREATED);
 //        return new ResponseEntity<Position>(position, HttpStatus.CREATED);
+
+
+
     }
 
     @ApiOperation(value = "Update employee")
     @RequestMapping(value = "/update",method = RequestMethod.PUT, produces = "application/json")
     public ResponseEntity<Void> updateEmployee(@RequestBody Employee employee){
-        Employee existingEmployee = employeeService.findById(employee.getId());
+
+        Employee existingEmployee = employeeService.getById(employee.getId());
         if (existingEmployee == null){
             return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
+
+
+
         }
         else {
             employeeService.save(employee);
@@ -90,10 +96,13 @@ public class EmployeeController {
         }
     }
 
+
     @ApiOperation(value = "Delete employee")
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE, produces = "application/json")
     public ResponseEntity<Void> deleteEmployee(@PathVariable("id") long id){
-        Employee employee = employeeService.findById(id);
+        Employee employee = employeeService.getById(id);
+
+
         if (employee == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
