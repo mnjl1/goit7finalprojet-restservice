@@ -5,6 +5,8 @@ import goit.finalproject.rest.Application;
 import goit.finalproject.rest.Service.StatusWorkService;
 import goit.finalproject.rest.Service.StatusWorkServiceImpl;
 import goit.finalproject.rest.model.StatusWork;
+import goit.finalproject.rest.repository.StatusWorkRepository;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,42 +15,34 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
+@SpringBootTest
 @RunWith(SpringRunner.class)
-//@DataJpaTest
-@SpringBootTest(classes = Application.class)
-//@WebAppConfiguration
-//@SpringBootTest(
-//        webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-//        classes = Application.class)
-////@AutoConfigureMockMvc
-//@TestPropertySource(
-//        locations = "classpath:resources/application-integrationtest.properties")
+@ActiveProfiles("testing")
 public class StatusWorkServiceTest {
 
     @Autowired
-    private StatusWorkService statusWorkService;
+    private StatusWorkRepository statusWorkRepository;
 
-    @Autowired
-    private TestEntityManager testEntityManager;
+    @Before
+    public void before() {
+        statusWorkRepository.deleteAll();
+    }
 
     @Test
     public void saveTest() {
         StatusWork statusWork = new StatusWork("work");
-        testEntityManager.persist(statusWork);
-        testEntityManager.flush();
+        statusWorkRepository.save(statusWork);
 
-        StatusWork found = statusWorkService.findByStatusWork("work");
+        StatusWork found = statusWorkRepository.findByName("work");
 
-        assertThat(found.getName())
-                .isEqualTo(statusWork.getName());
-
-//        assertNotNull(statusWorkService.save(new StatusWork("work")));
+        assertEquals(statusWork, found);
     }
-
 }
