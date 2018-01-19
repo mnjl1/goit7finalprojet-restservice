@@ -1,6 +1,5 @@
 package goit.finalproject.rest.repository;
 
-import com.sun.org.glassfish.gmbal.DescriptorKey;
 import goit.finalproject.rest.model.*;
 import org.junit.Before;
 import org.junit.Test;
