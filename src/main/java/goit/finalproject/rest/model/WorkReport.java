@@ -117,4 +117,30 @@ public class WorkReport implements Serializable{
                 ", salaryPeriod=" + salaryPeriod +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        WorkReport that = (WorkReport) o;
+
+        if (!id.equals(that.id)) return false;
+        if (tabelID != null ? !tabelID.equals(that.tabelID) : that.tabelID != null) return false;
+        if (beginPeriod != null ? !beginPeriod.equals(that.beginPeriod) : that.beginPeriod != null) return false;
+        if (endPeriod != null ? !endPeriod.equals(that.endPeriod) : that.endPeriod != null) return false;
+        if (countDay != null ? !countDay.equals(that.countDay) : that.countDay != null) return false;
+        return salaryPeriod != null ? salaryPeriod.equals(that.salaryPeriod) : that.salaryPeriod == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id.hashCode();
+        result = 31 * result + (tabelID != null ? tabelID.hashCode() : 0);
+        result = 31 * result + (beginPeriod != null ? beginPeriod.hashCode() : 0);
+        result = 31 * result + (endPeriod != null ? endPeriod.hashCode() : 0);
+        result = 31 * result + (countDay != null ? countDay.hashCode() : 0);
+        result = 31 * result + (salaryPeriod != null ? salaryPeriod.hashCode() : 0);
+        return result;
+    }
 }

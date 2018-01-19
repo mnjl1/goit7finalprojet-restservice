@@ -62,4 +62,10 @@ public class EventServiceImpl implements EventService{
             eventRepository.delete(id);
         }
     }
+
+    @Override
+    public void deleteAll() {
+        log.info("Clear table events");
+        eventRepository.deleteAll();
+    }
 }

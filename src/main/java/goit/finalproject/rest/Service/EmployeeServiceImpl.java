@@ -17,8 +17,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     private EmployeeRepository employeeRepository;
 
     @Override
-    public Employee save(Employee entity) {
-        return employeeRepository.save(entity);
+    public Employee save(Employee employee) {
+        return employeeRepository.save(employee);
     }
 
     @Override
@@ -49,6 +49,12 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public List<Employee> findByEmail(String email) {
         return employeeRepository.findByEmail(email);
+    }
+
+    @Override
+    public void deleteAll() {
+        log.info("Clear table employees");
+        employeeRepository.deleteAll();
     }
 
     @Override

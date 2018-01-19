@@ -1,5 +1,7 @@
 package goit.finalproject.rest.Service;
 
+import goit.finalproject.rest.email.EmailService;
+import goit.finalproject.rest.email.Mail;
 import goit.finalproject.rest.model.Employee;
 import goit.finalproject.rest.model.WorkReport;
 import goit.finalproject.rest.model.DateEvent;
@@ -14,9 +16,8 @@ import java.util.*;
 
 @Service
 public class WorkReportServiceImpl implements WorkReportService{
-        private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(WorkReportService.class);
-        public static final SimpleDateFormat formatForMonthNow = new SimpleDateFormat("MM yyyy");
-
+    private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(WorkReportService.class);
+    public static final SimpleDateFormat formatForMonthNow = new SimpleDateFormat("MM yyyy");
 
     @Autowired
     private WorkReportRepository workReportRepository;
@@ -26,6 +27,9 @@ public class WorkReportServiceImpl implements WorkReportService{
 
     @Autowired
     private DateEventService dateEventService;
+
+    @Autowired
+    private EmailService emailService;
 
     @Override
     public WorkReport add(WorkReport report) {
@@ -143,6 +147,29 @@ public class WorkReportServiceImpl implements WorkReportService{
             }
         }
         return reports;
+    }
+
+    @Override
+    public void deleteAll() {
+        log.info("Clear table reports");
+        workReportRepository.deleteAll();
+    }
+
+    @Override
+    public void sendEmailOfPeriod(WorkReport report) {
+        Employee employee = employeeRepository.findByTabelID(report.getTabelID());
+        Mail mail = new Mail();
+        //mail.setFrom("tetyana.loban@gmail.com");
+        mail.setTo(employee.getEmail());
+        mail.setSubject("Report period: "+report.getBeginPeriod()+" - "+report.getEndPeriod());
+        String text = employee.getFirstName()+"."+employee.getLastName()+"\n"
+                +"period: "+report.getBeginPeriod()+"-"+report.getEndPeriod()+"\n"
+                +"count of work days: "+ report.getCountDay()+"\n"
+                +"RESULT salary: "+ report.getSalaryPeriod();
+
+        mail.setContent(text);
+
+        emailService.sendSimpleMessage(mail);
     }
 
 

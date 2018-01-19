@@ -13,5 +13,6 @@ public interface StatusWorkService {
     StatusWork save(StatusWork statusWork);
     void update(StatusWork statusWork);
     void delete(Long id);
+    void deleteAll();
 
 }

@@ -31,4 +31,6 @@ public interface DateEventService  {
 
 //    report  for employee of period
     WorkReport reportEmployeeOfPeriod(Employee employee, String dateBeginPeriod, String dateEndPeriod);
+
+    void deleteAll();
 }

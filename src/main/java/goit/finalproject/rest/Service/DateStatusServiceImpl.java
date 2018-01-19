@@ -14,6 +14,7 @@ import java.util.*;
 
 @Service
 public class DateStatusServiceImpl implements DateStatusService {
+
     private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(DateStatusServiceImpl.class);
 
     @Autowired
@@ -62,6 +63,12 @@ public class DateStatusServiceImpl implements DateStatusService {
     }
 
     @Override
+    public void deleteAll() {
+        log.info("Clear table dateStatus");
+        dateStatusRepository.deleteAll();
+    }
+
+    @Override
     public List<DateStatus> findByEmployee(Employee employee) {
         log.info("Find all DateStatus  for employee by ID {}",  employee.getId());
         return dateStatusRepository.findByEmployee(employee);
@@ -89,7 +96,6 @@ public class DateStatusServiceImpl implements DateStatusService {
         }
 
         log.info("Create new Day (default all Employees have status \"work\")");
-        //Set<Employee> employees - all employees in Company
         List<Employee> employeesList = employeeRepository.findAll();
         Set<Employee> employeeSet = new HashSet<>();
         for(Employee e: employeesList){
@@ -103,8 +109,7 @@ public class DateStatusServiceImpl implements DateStatusService {
                 Integer.parseInt(dateDayList[0]));
 
         if ((calendar.get(Calendar.DAY_OF_WEEK)!=1)&&(calendar.get(Calendar.DAY_OF_WEEK)!=7)) {
-            //String dateDay = formatForDateNow.format(new Date());
-            log.info("!!!!!!!!!!!!!!!!!!!!!!! day {}", date);
+            log.info("! day {}", date);
             StatusWork statusWork = statusWorkRepository.findByName("work");
 
             for (Employee e : employeeSet) {
@@ -113,7 +118,7 @@ public class DateStatusServiceImpl implements DateStatusService {
                 if ((list == null) || (list.size() == 0)) {
                     log.info("create new DateStatus DATE {}, employee {}, status {}",
                             date, e.getLastName(), statusWork.getName());
-                    saveDataStatusList.add(dateStatusRepository.save(new DateStatus(e,//employeeRepository.findOne(e.getId()),
+                    saveDataStatusList.add(dateStatusRepository.save(new DateStatus(e,
                                             date, statusWork))
                                             );
                 }
@@ -124,6 +129,5 @@ public class DateStatusServiceImpl implements DateStatusService {
         List<DateStatus> dateStatusListReturn = dateStatusRepository.findByDate(date);
 
         return dateStatusListReturn;
-//        return saveDataStatusList;
     }
 }

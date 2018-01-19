@@ -57,7 +57,7 @@ public class Employee implements Serializable {
     @ApiModelProperty(notes = "Coefficient of not work")
     private Float koefNotWork;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "employee")
+    @OneToMany(fetch = FetchType.LAZY, cascade = { CascadeType.ALL }, mappedBy = "employee")
     List<DateStatus> statuses;
 
     //1
@@ -218,4 +218,6 @@ public class Employee implements Serializable {
                 ", koefNotWork=" + koefNotWork +
                 '}';
     }
+
+
 }

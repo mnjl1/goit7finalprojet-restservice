@@ -73,4 +73,9 @@ public class PositionServiceImpl implements PositionService {
         }
 
     }
+
+    @Override
+    public void deleteAll() {
+        positionRepository.deleteAll();
+    }
 }

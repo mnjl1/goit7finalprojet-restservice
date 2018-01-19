@@ -79,6 +79,14 @@ public class DateEventServiceImpl implements  DateEventService {
         }
     }
 
+
+    @Override
+    public void deleteAll() {
+        log.info("Clear table dateEvents");
+        dateEventRepository.deleteAll();
+    }
+
+
     @Override
     public List<DateEvent> findByEmployee(Employee employee) {
 

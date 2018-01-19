@@ -19,30 +19,49 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-@ActiveProfiles("testing")
+@ActiveProfiles("testing") //application-testing.properties
 public class StatusWorkServiceTest {
 
     @Autowired
-    private StatusWorkRepository statusWorkRepository;
+    private StatusWorkService statusWorkService;
 
     @Before
     public void before() {
-        statusWorkRepository.deleteAll();
+        statusWorkService.deleteAll();
     }
 
     @Test
     public void saveTest() {
         StatusWork statusWork = new StatusWork("work");
-        statusWorkRepository.save(statusWork);
+        statusWorkService.save(statusWork);
 
-        StatusWork found = statusWorkRepository.findByName("work");
+        StatusWork found = statusWorkService.findByStatusWork("work");
 
         assertEquals(statusWork, found);
+    }
+
+    @Test
+    public void findAllTest(){
+        List<StatusWork> statusWorkList = new ArrayList<>();
+        statusWorkList.add(new StatusWork("work"));
+        statusWorkList.add(new StatusWork("ill"));
+        statusWorkList.add(new StatusWork("holiday"));
+        statusWorkList.add(new StatusWork("not work"));
+
+        for(StatusWork s: statusWorkList){
+            statusWorkService.save(s);
+        }
+
+        List<StatusWork> found = statusWorkService.findAllStatusWork();
+        assertEquals(statusWorkList, found);
     }
 }

@@ -63,4 +63,11 @@ public class StatusWorkServiceImpl implements StatusWorkService {
             statusWorkRepository.delete(statusWork);
         }
     }
+
+    @Override
+    public void deleteAll() {
+        log.info("Clear table statuses");
+        statusWorkRepository.deleteAll();
+    }
+
 }

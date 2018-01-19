@@ -43,7 +43,7 @@ public class DateEvent implements Serializable {
 //    private Set<Employee> employees;
 
     //3
-//    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "events")
+//    @ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.ALL }, mappedBy = "events")
 //    private Set<Employee> employees;
 
     public DateEvent() {
@@ -118,5 +118,25 @@ public class DateEvent implements Serializable {
                 ", departments=" + departments +
 //                ", employees=" + employees +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        DateEvent dateEvent = (DateEvent) o;
+
+        if (id != null ? !id.equals(dateEvent.id) : dateEvent.id != null) return false;
+        if (date != null ? !date.equals(dateEvent.date) : dateEvent.date != null) return false;
+        return event != null ? event.equals(dateEvent.event) : dateEvent.event == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (date != null ? date.hashCode() : 0);
+        result = 31 * result + (event != null ? event.hashCode() : 0);
+        return result;
     }
 }

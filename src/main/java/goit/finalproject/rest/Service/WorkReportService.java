@@ -15,4 +15,8 @@ public interface WorkReportService {
 
     List<WorkReport> addAllReportForAllEmployeesFirstDayOfMonth(String month); //"" - previous month
     List<WorkReport> findAllReportForAllEmployeesFirstDayOfMonth(String month);
+
+    void deleteAll();
+
+    void sendEmailOfPeriod(WorkReport report);
 }

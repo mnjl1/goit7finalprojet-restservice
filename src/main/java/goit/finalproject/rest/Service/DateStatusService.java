@@ -22,4 +22,6 @@ public interface DateStatusService {
 
     //automatic create new Day (default all Employees have status "work")
     List<DateStatus> createDay(String date);
+
+    void deleteAll();
 }

@@ -60,4 +60,22 @@ public class Event implements Serializable {
     public String toString() {
         return type;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Event event = (Event) o;
+
+        if (id != null ? !id.equals(event.id) : event.id != null) return false;
+        return type != null ? type.equals(event.type) : event.type == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (type != null ? type.hashCode() : 0);
+        return result;
+    }
 }

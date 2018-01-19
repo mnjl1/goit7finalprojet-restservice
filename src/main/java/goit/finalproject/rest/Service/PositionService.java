@@ -15,5 +15,6 @@ public interface PositionService {
     void update(Position position);
 
     void delete(Long id);
+    void deleteAll();
 
 }

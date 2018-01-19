@@ -93,4 +93,26 @@ public class DateStatus implements Serializable {
                 ", statusWork=" + statusWork +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        DateStatus that = (DateStatus) o;
+
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (employee != null ? !employee.equals(that.employee) : that.employee != null) return false;
+        if (date != null ? !date.equals(that.date) : that.date != null) return false;
+        return statusWork != null ? statusWork.equals(that.statusWork) : that.statusWork == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (employee != null ? employee.hashCode() : 0);
+        result = 31 * result + (date != null ? date.hashCode() : 0);
+        result = 31 * result + (statusWork != null ? statusWork.hashCode() : 0);
+        return result;
+    }
 }
